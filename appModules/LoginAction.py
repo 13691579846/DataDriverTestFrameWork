@@ -7,15 +7,13 @@ class LoginAction(object):
 
     @staticmethod #
     def login(driver, username, password):
-        try:
-            login = LoginPage(driver)
-            login.switchToFrame()
-            login.userNameObj().send_keys(username)
-            login.passwordObj().send_keys(password)
-            login.loginBtnObj().click()
-            login.switchToDefaultFrame()
-        except Exception as e:
-            raise e
+        login = LoginPage(driver)
+        login.switchToFrame()
+        login.userNameObj().send_keys(username)
+        login.passwordObj().send_keys(password)
+        login.loginBtnObj().click()
+        login.switchToDefaultFrame()
+
 if __name__=='__main__':
     from selenium import webdriver
     driver = webdriver.Firefox()
