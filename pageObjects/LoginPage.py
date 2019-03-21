@@ -2,45 +2,50 @@ from util.ObjectMap import *
 from util.ParseConfigurationFile import ParseConfigFile
 class LoginPage(object):
     '''
-    保存登录页面元素
+    登录页面所有的操作元素对象
     '''
     def __init__(self, driver):
         self.driver = driver
         self.cf = ParseConfigFile()
 
     def switchToFrame(self):
+        '''
+        切换到frame中
+        :return:
+        '''
         by, locator = self.cf.getElementValue('126mail_login', 'loginPage.frame')
-        self.driver.switch_to.frame(getElement(self.driver, by,locator))
+        try:
+            self.driver.switch_to.frame(getElement(self.driver, by,locator))
+        except Exception as e:
+            raise e
 
     def switchToDefaultFrame(self):
-        self.driver.switch_to.default_content()
+        '''
+        跳出frame
+        :return:
+        '''
+        try:
+            self.driver.switch_to.default_content()
+        except Exception as e:
+            raise e
 
-    def userNameObj(self):
+    def userNameObj(self): # 用户名输入框
         by, locator = self.cf.getElementValue('126mail_login', 'loginPage.username')
-        try:
-            username = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return username
 
-    def passwordObj(self):
+        username = getElement(self.driver, by, locator)
+        return username
+
+    def passwordObj(self): # 密码输入框
         by, locator = self.cf.getElementValue('126mail_login', 'loginPage.password')
-        try:
-            password = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return password
 
-    def loginBtnObj(self):
+        password = getElement(self.driver, by, locator)
+        return password
+
+    def loginBtnObj(self): # 登录按钮
         by, locator = self.cf.getElementValue('126mail_login', 'loginPage.loginBtn')
-        try:
-            loginbtn = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return loginbtn
+
+        loginbtn = getElement(self.driver, by, locator)
+        return loginbtn
 
 if __name__=='__main__':
     from selenium import webdriver

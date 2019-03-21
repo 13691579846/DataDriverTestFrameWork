@@ -23,7 +23,7 @@ def bDriver():
     else:
         return driver
 
-def testMailLogin():
+def testMailLogin(driver):
     '''
     测试用例
     :return:
@@ -37,10 +37,10 @@ def testMailLogin():
             userRowValue = p.getRowValue(sheetName[0], idx+2) # 获取执行状态为y所在行的数据
             userName = userRowValue[account_userName-2]
             passWord = userRowValue[account_passWord-2]
-            driver = bDriver()
+            # driver = bDriver()
             # 登录
             LoginAction.login(driver,userName, passWord)
-            time.sleep(1)
+            time.sleep(10) # 足够的时间加载登录成功的页面
             try:
                 assert '通讯录' in driver.page_source
             except Exception as e:
@@ -84,4 +84,5 @@ def testMailLogin():
             driver.quit()
 
 if __name__=='__main__':
-    testMailLogin()
+    driver = bDriver()
+    testMailLogin(driver)

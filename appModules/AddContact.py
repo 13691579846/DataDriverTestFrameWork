@@ -10,11 +10,26 @@ class NewContactPersonAction(object):
 
     @staticmethod
     def addressLink(driver):
+        '''
+        点击通讯录按钮
+        :param driver:
+        :return:
+        '''
         homePage = HomePage(driver)
         # 点击通讯录
         homePage.addressLink().click()
     @staticmethod
     def addContact(driver, contactName, contactMail, isSatr, contactPhone, contactComment):
+        '''
+        添加联系人场景
+        :param driver:
+        :param contactName:
+        :param contactMail:
+        :param isSatr:
+        :param contactPhone:
+        :param contactComment:
+        :return:
+        '''
         # 点击新建联系人
         addContact = AddContactPage(driver)
         # 调试的时候这边有时候会报错。点击不到[新建联系人]这个按钮，所以加了一个显示等待

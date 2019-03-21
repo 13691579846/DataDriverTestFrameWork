@@ -1,0 +1,2 @@
+2019-03-21 16:47:43,588 - TestMail126.py:[51] - [INFO] - linuxxiaochao,xiaochao11520登录成功, 断言”通讯录“成功
+2019-03-21 16:48:35,740 - TestMail126.py:[51] - [INFO] - linuxxiaochao,xiaochao11520登录成功, 断言”通讯录“成功

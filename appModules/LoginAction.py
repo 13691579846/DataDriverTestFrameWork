@@ -7,6 +7,13 @@ class LoginAction(object):
 
     @staticmethod #
     def login(driver, username, password):
+        '''
+        登录场景
+        :param driver:
+        :param username:
+        :param password:
+        :return:
+        '''
         login = LoginPage(driver)
         login.switchToFrame()
         login.userNameObj().send_keys(username)

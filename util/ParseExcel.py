@@ -1,6 +1,9 @@
 from openpyxl import load_workbook
 from config.varCondig import *
 class ParseExcel(object):
+    '''
+    解析excel文件的封装
+    '''
     def __init__(self):
         # 加载excel文件到内存
         self.wb = load_workbook(testExcelValuePath)

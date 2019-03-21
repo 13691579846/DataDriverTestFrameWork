@@ -4,6 +4,9 @@ import time
 from config.varCondig import *
 
 class Logger(object):
+    '''
+    封装的日志模块
+    '''
     def __init__(self, logger, CmdLevel=logging.INFO, FileLevel=logging.INFO):
         """
 

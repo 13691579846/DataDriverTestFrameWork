@@ -2,73 +2,54 @@ from util.ParseConfigurationFile import ParseConfigFile
 from util.ObjectMap import *
 
 class AddContactPage(object):
-
+    '''
+    添加联系人页面所有操作元素对象
+    '''
     def __init__(self, driver):
         self.driver = driver
         self.cf = ParseConfigFile()
 
-    def newContact(self):
+    def newContact(self): # 新建联系人
         by, locator = self.cf.getElementValue('126mail_addContactPage', 'addContactPage.newContact')
-        try:
-            element = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return element
 
-    def addName(self):
+        element = getElement(self.driver, by, locator)
+        return element
+
+    def addName(self): # 姓名输入框
         by, locator = self.cf.getElementValue('126mail_addContactPage', 'addContactPage.newName')
-        try:
-            element = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return element
 
-    def addMail(self):
+        element = getElement(self.driver, by, locator)
+        return element
+
+    def addMail(self): # 电子邮件输入框
         by, locator = self.cf.getElementValue('126mail_addContactPage', 'addContactPage.newMail')
-        try:
-            element = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return element
 
-    def markStar(self):
+        element = getElement(self.driver, by, locator)
+        return element
+
+    def markStar(self): # 设为星际联系人
         by, locator = self.cf.getElementValue('126mail_addContactPage', 'addContactPage.newMark')
-        try:
-            element = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return element
 
-    def addPhone(self):
+        element = getElement(self.driver, by, locator)
+        return element
+
+    def addPhone(self): # 手机号码输入框
         by, locator = self.cf.getElementValue('126mail_addContactPage', 'addContactPage.newPhone')
-        try:
-            element = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return element
 
-    def addContent(self):
+        element = getElement(self.driver, by, locator)
+        return element
+
+    def addContent(self): # 备注
         by, locator = self.cf.getElementValue('126mail_addContactPage', 'addContactPage.newComment')
-        try:
-            element = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return element
 
-    def clickCommitBtn(self):
+        element = getElement(self.driver, by, locator)
+        return element
+
+    def clickCommitBtn(self): # 确定按钮
         by, locator = self.cf.getElementValue('126mail_addContactPage', 'addContactPage.newCommit')
-        try:
-            element = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return element
+
+        element = getElement(self.driver, by, locator)
+        return element
 
 if __name__=='__main__':
     from selenium import webdriver

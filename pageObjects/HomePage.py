@@ -8,13 +8,14 @@ class HomePage(object):
         self.cf = ParseConfigFile()
 
     def addressLink(self):
+        '''
+        通讯录菜单对象
+        :return:
+        '''
         by, locator = self.cf.getElementValue('126mail_homePage','homePage.addressbook')
-        try:
-            elementObj = getElement(self.driver, by, locator)
-        except Exception as e:
-            raise e
-        else:
-            return elementObj
+
+        elementObj = getElement(self.driver, by, locator)
+        return elementObj
 
 if __name__=='__main__':
     from selenium import webdriver

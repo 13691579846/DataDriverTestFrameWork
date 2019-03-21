@@ -1,10 +1,13 @@
 import os
 
 # print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+# 项目目录
 parentDirPath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# init文件路径
 pageElementLocatorPath = parentDirPath+r'\config\PageElementLocator.ini'
+# excel文件路径
 testExcelValuePath = parentDirPath+r'\testData\126MailContact.xlsx'
+# 日志文件存放路径
 logPath = parentDirPath + r'\log'
 
 # 126username 表，每列对用的序号

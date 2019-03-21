@@ -3,27 +3,51 @@ import configparser
 
 class ParseConfigFile(object):
     '''
-    解析配置文件
+    解析ini配置文件
     '''
     def __init__(self):
-        self.cf = configparser.ConfigParser() # 获取配置文件对象
-        self.cf.read(pageElementLocatorPath, encoding='utf-8') # 加载配置文件到内存中
+        try:
+            self.cf = configparser.ConfigParser() # 获取配置文件对象
+            self.cf.read(pageElementLocatorPath, encoding='utf-8') # 加载配置文件到内存中
+        except Exception as e:
+            raise e
 
     def getItemsSection(self, sectionName):
-        vlaues = dict(self.cf.items(sectionName))
-        return vlaues
+        '''
+        获取section下面所有section的键值
+        :param sectionName:
+        :return:
+        '''
+        try:
+            vlaues = dict(self.cf.items(sectionName))
+        except Exception as e:
+            raise e
+        else:
+            return vlaues
 
     def getElementValue(self, sectionName, optionName):
-        locator = self.cf.get(sectionName, optionName).split('>')
-        return locator # 获取option键对应的value
+        try:
+            locator = self.cf.get(sectionName, optionName).split('>')
+        except Exception as e:
+            raise e
+        else:
+            return locator # 获取option键对应的value
 
     def getAllSections(self):
-        allsections = self.cf.sections()
-        return allsections # 所有的sections返回值是个列表
+        try:
+            allsections = self.cf.sections()
+        except Exception as e:
+            raise e
+        else:
+            return allsections # 所有的sections返回值是个列表
 
     def getAllOptions(self, section):
-        section = self.cf.options(section)
-        return section # 某个section下面的键
+        try:
+            options = self.cf.options(section)
+        except Exception as e:
+            raise e
+        else:
+            return options # 某个section下面的键
 
 if __name__=='__main__':
     cf = ParseConfigFile()
