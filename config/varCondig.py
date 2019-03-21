@@ -5,6 +5,7 @@ import os
 parentDirPath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 pageElementLocatorPath = parentDirPath+r'\config\PageElementLocator.ini'
 testExcelValuePath = parentDirPath+r'\testData\126MailContact.xlsx'
+logPath = parentDirPath + r'\log'
 
 # 126username 表，每列对用的序号
 account_userName = 2
@@ -28,3 +29,4 @@ if __name__=='__main__':
 
     print(pageElementLocatorPath)
     print(testExcelValuePath)
+    print(logPath)

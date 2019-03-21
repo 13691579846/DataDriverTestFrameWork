@@ -43,6 +43,17 @@ class ParseExcel(object):
         sh = self.wb[sheetName]
         value = sh.cell(rowNo, colNo).value
         return value
+    def writeCell(self, sheetName, rowNo, colNo, value):
+        '''
+        向某个单元格写入数据
+        :param rowNo: 行号
+        :param colNo: 列号
+        :param value:
+        :return: 无
+        '''
+        sh = self.wb[sheetName]
+        sh.cell(rowNo, colNo).value = value
+        self.wb.save(testExcelValuePath)
 if __name__=='__main__':
     p = ParseExcel()
     print(p.getRowValue('126account',2))
