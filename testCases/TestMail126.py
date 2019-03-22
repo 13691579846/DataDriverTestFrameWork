@@ -44,11 +44,11 @@ def testMailLogin(driver):
             try:
                 assert '通讯录' in driver.page_source
             except Exception as e:
-                log.logger.info('断言"通讯录"失败,错误信息{}'.format(traceback.format_exc()))
+                log.logger.info('登录失败,输出信息如下：{}'.format(traceback.format_exc()))
                 p.writeCell(sheetName[0], idx + 2, account_testResult, 'failed')
                 # raise e
             else:
-                log.logger.info('{},{}登录成功, 断言”通讯录“成功'.format(userName, passWord))
+                log.logger.info('账号：{}登录成功, 测试通过'.format(userName))
                 p.writeCell(sheetName[0], idx + 2, account_testResult, 'pass')
             # 获取联系人数据表中是否执行列的数据
                 isExcute = p.getColumnValue(sheetName=sheetName[1], colNo=contact_contactIsExcute)
