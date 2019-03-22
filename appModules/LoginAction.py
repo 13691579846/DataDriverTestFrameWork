@@ -25,4 +25,4 @@ if __name__=='__main__':
     from selenium import webdriver
     driver = webdriver.Firefox()
     driver.get('https://mail.126.com')
-    LoginAction.login(driver, 'linuxxiaochao', 'xiaochao11520')
+    LoginAction.login(driver, 'linux', 'chao')

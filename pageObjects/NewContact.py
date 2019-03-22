@@ -61,7 +61,7 @@ if __name__=='__main__':
     driver.get('https://mail.126.com')
     time.sleep(3)
     # 登录
-    LoginAction.login(driver,'linuxxiaochao', 'xiaochao11520')
+    LoginAction.login(driver,'linux', 'chao')
     # 主页面
     homepage = HomePage(driver)
     homepage.addressLink().click()

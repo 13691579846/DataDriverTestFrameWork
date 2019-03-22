@@ -56,7 +56,7 @@ if __name__=='__main__':
     driver = webdriver.Firefox()
     driver.get('https://mail.126.com')
     time.sleep(5)
-    LoginAction.login(driver, 'linuxxiaochao', 'xiaochao11520')
+    LoginAction.login(driver, 'linux', 'chao')
     NewContactPersonAction.addressLink(driver)
     NewContactPersonAction.addContact(driver, '','123456@qq.com', '是', '','')
     time.sleep(5)
