@@ -1,12 +1,5 @@
-'''
-用例执行入口
-'''
+from testCases.TestMail126 import test_mail_login
 
-import sys
-sys.path.append(r'.')
 
-if __name__=='__main__':
-    from testCases.TestMail126 import *
-
-    driver = bDriver()
-    testMailLogin(driver)
+if __name__ == '__main__':
+    test_mail_login()

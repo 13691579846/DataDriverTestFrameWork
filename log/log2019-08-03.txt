@@ -1,0 +1,99 @@
+2019-08-03 19:20:26,340 - RecordLog.py:[30] - [DEBUG] - debug
+2019-08-03 19:20:26,340 - RecordLog.py:[31] - [ERROR] - log日志 error
+2019-08-03 19:44:39,990 - TestMail126.py:[59] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 57, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 20:32:00,663 - TestMail126.py:[59] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 57, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 20:32:45,726 - TestMail126.py:[63] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 20:35:01,956 - TestMail126.py:[62] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 20:37:01,963 - TestMail126.py:[62] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 21:01:13,183 - TestMail126.py:[61] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 59, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 21:01:24,865 - TestMail126.py:[61] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 59, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 21:06:58,355 - TestMail126.py:[66] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 21:07:20,949 - TestMail126.py:[61] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 59, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 21:09:15,233 - TestMail126.py:[61] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 59, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 21:09:26,390 - TestMail126.py:[61] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 59, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 21:10:45,896 - TestMail126.py:[66] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 21:11:42,555 - TestMail126.py:[61] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 59, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 21:22:55,986 - TestMail126.py:[69] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 21:23:07,193 - TestMail126.py:[64] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 62, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 21:30:03,066 - TestMail126.py:[70] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 21:32:28,465 - TestMail126.py:[70] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 21:42:16,777 - TestMail126.py:[70] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 21:43:13,106 - TestMail126.py:[65] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 63, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 21:51:22,329 - TestMail126.py:[70] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 21:52:18,585 - TestMail126.py:[65] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 63, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 22:22:26,556 - TestMail126.py:[60] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 22:51:31,015 - TestMail126.py:[60] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 22:52:27,839 - TestMail126.py:[55] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 52, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 23:18:02,628 - TestMail126.py:[63] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 23:19:17,176 - TestMail126.py:[63] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 23:20:13,354 - TestMail126.py:[58] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "E:\DataDriverTestFrameWork\testCases\TestMail126.py", line 55, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 23:23:47,023 - TestMail126.py:[63] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 23:24:43,201 - TestMail126.py:[58] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "E:\DataDriverTestFrameWork\testCases\TestMail126.py", line 55, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 23:28:40,695 - TestMail126.py:[62] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 23:29:36,546 - TestMail126.py:[57] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 54, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
+2019-08-03 23:41:01,163 - TestMail126.py:[62] - [INFO] - 账号：linuxxiaochao登录成功, 测试通过
+2019-08-03 23:41:57,604 - TestMail126.py:[57] - [INFO] - 登录失败,输出信息如下：Traceback (most recent call last):
+  File "D:\DataDriverTestFrameWork\testCases\TestMail126.py", line 54, in test_mail_login
+    assert '通讯录' in driver.page_source
+AssertionError
+
